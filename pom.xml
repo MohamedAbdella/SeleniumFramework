@@ -112,7 +112,7 @@
           <version>2.22.1</version>
           <configuration>
           <suiteXmlFiles>
-          <suiteXmlFile>testng.xml</suiteXmlFile>
+          <suiteXmlFile>testng2.xml</suiteXmlFile>
           </suiteXmlFiles>
           </configuration>
         </plugin>
