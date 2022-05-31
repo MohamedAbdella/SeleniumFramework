@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testing-1.0.dtd">
+<suite  name="nop commerce regresssion suit">
+<parameter name="browser" value="chrome" />
+  <test name="Test">
+    <classes>
+      <class name="tests.UserRegestirationTestWithJavaFaker"/>
+      <class name="tests.AddToCartTest"/>
+      <class name="tests.ChangeCurrencyTest"/>
+      <class name="tests.UserCanAddProductToWishlist"/>   
+      <class name="tests.EmailFriendTest"/>
+     
+    </classes>
+  </test> 
+</suite> 
