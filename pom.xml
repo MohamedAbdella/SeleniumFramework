@@ -89,6 +89,22 @@
 
     
   </dependencies>
+  
+  <profiles>
+      <profile>
+  <id>regression</id>
+  <activation>
+  <activeByDefault>true</activeByDefault>
+  <property>
+  <name>enviroment</name>
+  <value>regression</value>
+  </property>
+  </activation>
+  <properties>
+  <testNGsuite>testng2.xml</testNGsuite>
+  </properties>
+      </profile> 
+  </profiles>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -112,7 +128,7 @@
           <version>2.22.1</version>
           <configuration>
           <suiteXmlFiles>
-          <suiteXmlFile>testng2.xml</suiteXmlFile>
+          <suiteXmlFile>${testNGsuite}</suiteXmlFile>
           </suiteXmlFiles>
           </configuration>
         </plugin>
